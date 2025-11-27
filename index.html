@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="p-3" id="inicio">Todo el verano en un día</h1>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(37, 42, 68);">
+
+            <div class="container-fluid">
+                <!--<a class="navbar-brand" href="#">Navbar</a> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#autor">Autor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#proceso">Proceso</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="#historia">Historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#yo">pie</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="row">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/imagen8.jpg" class="d-block w-100" alt="protagonista triste">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/imagen1.jpg" class="d-block w-100" alt="niños viendo la lluvia">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/imagen2.jpg" class="d-block w-100" alt="ciudad">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        
+<div class="row text-center">
+    <div class="col-12">
+        <iframe src="tpfinalp1/" frameborder="0" width="650" height="490" style="margin-top: 40px; margin-bottom: 40px;"></iframe>
+    </div>
+</div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-sm-12 g-3">
+                <div class="card">
+                    <img src="img/autor.jpg" class="card-img-top" alt="autor" id="autor">
+                    <div class="card-body" style="background-color: rgb(116, 93, 78);">
+                       <h4>Ray Bradbury</h4>
+                        <p class="card-text">
+                            
+                            Ray Bradbury (1920–2012) fue un escritor estadounidense de ciencia ficción, fantasía y terror, famoso por su estilo poético y su imaginación. Creció en Illinois y desde muy joven decidió dedicarse a escribir. Su obra más conocida es "Fahrenheit 451", una novela sobre la censura y la importancia de los libros. También publicó "Crónicas Marcianas" y "El hombre ilustrado", entre muchos otros relatos. Bradbury dejó un legado enorme en la literatura y es considerado uno de los autores más influyentes del siglo XX.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 col-sm-12 g-3">
+                <div class="card">
+                    <img src="img/imagen12.jpg" class="card-img-top" alt="7 años para el sol" id="proceso">
+                    <div class="card-body" style="background-color: rgb(116, 93, 78);">
+                        <p class="card-text">
+                            ¿Cómo se realizo la novela interactiva?</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop" style="background-color: rgb(33, 35, 63);">
+                            Proceso de producción
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header" style="background-color: rgb(44, 44, 65);">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel"> Proceso de producción</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body" style="background-color: rgb(235, 223, 203);">
+                                        Para realizar esta novela interactiva, lo primero que hice fue un diagrama el
+                                        cual muestra todas los caminos y botones que se usan para interactuar dentro de
+                                        la novela. Luego recorte las images para que midan 640x480 y por ultimo programe
+                                        utilizando una maquina de estados.
+                                        <img src="img/diagrama.jpg"  class="img-fluid" alt="diagrama">
+                                    </div>
+                                    <div class="modal-footer" style="background-color: rgb(44, 44, 65);">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                        <a href="https://www.figma.com/design/ll4P22FM9If3jXT6rMxeqT/Sin-t%C3%ADtulo?node-id=0-1&p=f&t=oM8CGDQ8FDh7XOTy-0" class="btn btn-primary" style="background-color: rgb(18, 17, 31);">ver en figma</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-sm-10 g-3">
+                <img src="img/imagen15.jpg" alt="niños cabizbajos" class="img-fluid" id="historia">
+            </div>
+            <div class="col-md-6 col-sm-10" style="margin-top: 80px;">
+                <h3> La historia</h3>
+                <p style="color: rgb(54, 37, 2);"> “Todo el verano en un día” trata sobre un grupo de niños que vive en Venus, donde llueve siempre y el sol solo aparece cada siete años. Margot, una niña que recuerda el sol porque vivió en la Tierra, provoca la envidia de sus compañeros, quienes la encierran en un armario justo antes de que el sol salga. Mientras ellos disfrutan los pocos minutos de sol, olvidan a Margot y solo al volver, cuando regresa la lluvia, recuerdan lo que hicieron y regresan arrepentidos a liberarla.</p>
+            </div>
+            <hr style="border: 1px solid black; margin: 20px 0;">
+            <div class="col-md-6 col-sm-10 g-5">
+             <h5 id="yo">Alumna</h5>
+             <p style="color: rgb(54, 37, 2)";>
+             Micaela Cardozo, comisión 1
+            </p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
